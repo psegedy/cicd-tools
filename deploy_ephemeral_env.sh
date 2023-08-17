@@ -19,7 +19,6 @@ set -x
 export NAMESPACE=$(bonfire namespace reserve --pool ${NAMESPACE_POOL})
 SMOKE_NAMESPACE=$NAMESPACE  # track which namespace was used here for 'teardown' in common_deploy_logic
 
-
 bonfire deploy \
     ${APP_NAME} \
     --source=appsre \
